@@ -11,7 +11,7 @@
         Footer,
       }
     }
-    
+
 </script>
 
 <template>
@@ -23,5 +23,10 @@
 </template>
 
 <style scoped>
+
+  header {
+    height: 500px;
+    border: 1px solid black;
+  }
 
 </style>
