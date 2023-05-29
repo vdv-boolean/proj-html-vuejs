@@ -3,6 +3,7 @@
 </script>
 
 <template>
+
     <div class="contain">
         <h1>SEM Campaings Made Simple With Avada</h1>
         <p>
@@ -15,8 +16,12 @@
                 
         </p>
         <div class="buttons">
-            <button>Buy Avada Now</button>
-            <button>Contact Us</button>
+            <button>   
+                Buy Avada Now
+            </button>
+            <button>
+                Contact Us
+            </button>
         </div>
     </div>
     
