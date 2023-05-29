@@ -17,7 +17,7 @@
 <template>
 
   <Header/>
-  <Main/>
+  <!-- <Main/> -->
   <Footer/>
 
 </template>
@@ -38,4 +38,8 @@
     margin: auto;
   }
 
+  footer {
+    height: 200px;
+    background-color: white;
+  }
 </style>
