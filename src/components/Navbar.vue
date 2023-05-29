@@ -9,8 +9,7 @@
                     "What We Do",
                     "Where We Work",
                     "Careers",
-                    "News",
-                    "GET IN TOUCH NOW"
+                    "News"
                 ],
             };
         },
@@ -21,17 +20,23 @@
 <template>
 
     <nav>
-        <div>
+        <div class="left-bar">
             Logo
             <!-- TO DO: ADD LOGO-->
         </div>
-        <ul >
-            <li v-for="link in linkArr">
-                <a href="#">
-                    {{ link }}
-                </a>
-            </li>
-        </ul>
+        <div class="right-bar">
+            <ul>
+                <li v-for="link in linkArr">
+                    <a href="#">
+                        {{ link }}
+                    </a>
+                </li>
+            </ul>
+            <button>
+                Get in touch now
+            </button>
+        </div>
+        
     </nav>
     
 </template>
@@ -43,9 +48,14 @@
         justify-content: space-between;
     }
 
+    .right-bar {
+        display: flex;
+    }
+
     ul {
         display: flex;
         gap: 1rem;
+        padding-inline: 1rem;
     }
 
     li {
