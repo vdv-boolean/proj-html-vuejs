@@ -13,12 +13,17 @@ import Jumbo from "./Jumbo.vue"
 <template>
 
     <header>
-        <Navbar/>
-        <Jumbo/>
+        <div class="container">
+            <Navbar/>
+            <Jumbo/>
+        </div>
     </header>
     
 </template>
 
 <style scoped>
+    .container {
+        color: white;
+    }
 
 </style>
