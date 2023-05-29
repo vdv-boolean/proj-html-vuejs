@@ -11,9 +11,12 @@ import Jumbo from "./Jumbo.vue"
 </script>
 
 <template>
-    <h1>TEST MESSAGE FROM HEADER</h1>
-    <Navbar/>
-    <Jumbo/>
+
+    <header>
+        <Navbar/>
+        <Jumbo/>
+    </header>
+    
 </template>
 
 <style scoped>
