@@ -22,7 +22,7 @@
 
 </template>
 
-<style scoped>
+<style>
 
   header {
     height: 600px;
@@ -30,6 +30,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .container {
+    width: 1000px;
+    height: 100%;
+    margin: auto;
   }
 
 </style>
