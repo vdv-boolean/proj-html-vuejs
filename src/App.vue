@@ -25,8 +25,11 @@
 <style scoped>
 
   header {
-    height: 500px;
-    border: 1px solid black;
+    height: 600px;
+    background-image: url(./img/1-hero-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
 </style>
