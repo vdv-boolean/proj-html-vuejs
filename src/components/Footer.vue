@@ -5,7 +5,7 @@
 <template>
 
     <div class="container">
-        <img src="../img/logo_seo_1x.png" alt="">
+        <img src="public/img/logo_seo_1x.png" alt="">
         <div class="nav-bar">
             <!-- Inserire navbar-->
         </div>
