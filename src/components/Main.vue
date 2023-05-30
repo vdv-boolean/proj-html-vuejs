@@ -1,11 +1,11 @@
 <script>
-  import SectionOne from "./SectionOne.vue"
-  import SectionTwo from "./SectionTwo.vue"
-  import SectionThree from "./SectionThree.vue"
-  import SectionFour from "./SectionFour.vue"
-  import SectionFive from "./SectionFive.vue"
-  import SectionSix from "./SectionSix.vue"
-  import SectionSeven from "./SectionSeven.vue"
+  import SectionOne from "./main/SectionOne.vue"
+  import SectionTwo from "./main/SectionTwo.vue"
+  import SectionThree from "./main/SectionThree.vue"
+  import SectionFour from "./main/SectionFour.vue"
+  import SectionFive from "./main/SectionFive.vue"
+  import SectionSix from "./main/SectionSix.vue"
+  import SectionSeven from "./main/SectionSeven.vue"
 
   export default {
       components: {
