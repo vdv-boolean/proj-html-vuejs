@@ -32,7 +32,12 @@
     background-position: center;
   }
 
-  .container {
+  section {
+    min-height: 800px;
+  }
+
+  .container,
+  section {
     width: 1000px;
     height: 100%;
     margin: auto;
