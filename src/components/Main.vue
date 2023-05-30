@@ -4,6 +4,8 @@
   import SectionThree from "./SectionThree.vue"
   import SectionFour from "./SectionFour.vue"
   import SectionFive from "./SectionFive.vue"
+  import SectionSix from "./SectionSix.vue"
+  import SectionSeven from "./SectionSeven.vue"
 
   export default {
       components: {
