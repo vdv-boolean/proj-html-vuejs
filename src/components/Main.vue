@@ -14,6 +14,8 @@
         SectionThree,
         SectionFour,
         SectionFive,
+        SectionSix,
+        SectionSeven,
       }
     }
 </script>
@@ -24,6 +26,8 @@
     <SectionThree/>
     <SectionFour/>
     <SectionFive/>
+    <SectionSix/>
+    <SectionSeven/>
 </template>
 
 <style scoped>
