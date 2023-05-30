@@ -52,15 +52,16 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam!
         </p>
 
-        <div v-for="(card, key) in cardThree"
-        :key="key">
-            
-            
-            <img 
-                 
-                :src="card.img"
-                :alt="card.alt"
-            >
+        <div class="gallery">
+            <div
+            v-for="(card, key) in cardThree"
+            :key="key"
+        >
+                <img 
+                    :src="card.img"
+                    :alt="card.alt"
+                >
+        </div>
         </div>
 
         <button>   
@@ -72,4 +73,18 @@
 
 <style scoped>
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery div {
+    flex-basis: calc(33% - 10px);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
 </style>
