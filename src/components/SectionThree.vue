@@ -5,32 +5,32 @@
             return {
                 cardThree: [
                     {
-                        img: "../img/case-study-gallery-1-1-800x600.jpg",
+                        img: "public/img/case-study-gallery-1-1-800x600.jpg",
                         alt: "descrip.",
                         link: "#"
                     },
                     {
-                        img: "../img/case-study-gallery-2-800x600.jpg",
+                        img: "public/img/case-study-gallery-2-800x600.jpg",
                         alt: "descrip.",
                         link: "#"
                     },
                     {
-                        img: "../img/case-study-gallery-3-1-800x600.jpg",
+                        img: "public/img/case-study-gallery-3-1-800x600.jpg",
                         alt: "descrip.",
                         link: "#"
                     },
                     {
-                        img: "../img/case-study-gallery-4-1-800x600.jpg",
+                        img: "public/img/case-study-gallery-4-1-800x600.jpg",
                         alt: "descrip.",
                         link: "#"
                     },
                     {
-                        img: "../img/case-study-gallery-5-1-800x600.jpg",
+                        img: "public/img/case-study-gallery-5-1-800x600.jpg",
                         alt: "descrip.",
                         link: "#"
                     },
                     {
-                        img: "../img/case-study-gallery-6-1-800x600.jpg",
+                        img: "public/img/case-study-gallery-6-1-800x600.jpg",
                         alt: "descrip.",
                         link: "#"
                     },
@@ -52,11 +52,12 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam!
         </p>
 
-        <div>
+        <div v-for="(card, key) in cardThree"
+        :key="key">
             
             
             <img 
-                v-for="card in cardThree" 
+                 
                 :src="card.img"
                 :alt="card.alt"
             >
