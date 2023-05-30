@@ -21,8 +21,7 @@
 
     <nav>
         <div class="left-bar">
-            Logo
-            <!-- TO DO: ADD LOGO-->
+            <img src="public/img/logo_seo_1x.png" alt="">
         </div>
         <div class="right-bar">
             <ul>
