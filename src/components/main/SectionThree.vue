@@ -47,41 +47,58 @@
 <template>
 
     <section>
-        <h1>
-            Our Work
-        </h1>
 
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam!
-        </p>
+        <div class="container">
 
-        <div class="gallery">
-            <CardThree 
-                v-for="(card, key) in cardThree"
-                :key="card.key"
-                :img="card.img"
-                :alt="card.alt"
-                :link="card.link"
-            />
+            <h1>
+                Our Work
+            </h1>
+
+            <p>
+                Cumque ipsum consectetur autem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="gallery">
+                <CardThree 
+                    v-for="(card, key) in cardThree"
+                    :key="card.key"
+                    :img="card.img"
+                    :alt="card.alt"
+                    :link="card.link"
+                />
+            </div>
+
+            <button class="orange-btn">   
+                <a href="">
+                    View Our Work
+                </a>
+            </button>
+
         </div>
 
-        <button>   
-            View Our Work
-        </button>
     </section>
     
 </template>
 
 <style scoped>
 
+section {
+    padding: 3rem;
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .gallery div {
     flex-basis: calc(33% - 10px);
+}
+
+p {
+    margin-top: 2rem;
 }
 
 img {
