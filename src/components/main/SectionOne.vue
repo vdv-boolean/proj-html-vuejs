@@ -1,9 +1,11 @@
 <script>
 
+    import CardOne from "./CardOne.vue"
+
     export default {
         data() {
             return {
-                cardOne: [{
+                cardArray: [{
                     icon: "iconsrc",
                     title: "Estabilish Goals",
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est hic alias voluptates, at debitis dicta deleniti? Tempora nihil debitis, quas animi beatae obcaecati ex laborum vel neque, iusto modi corporis!",
@@ -20,7 +22,11 @@
                 },
             ]
             };
+            
         },
+        components: {
+        CardOne,
+        }
     }
 
 </script>
@@ -36,15 +42,17 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam!            
         </p>
 
-        <ul>
-            <li v-for="card in cardOne">
-                <div>{{ card.icon }}</div>
-                <div>{{ card.title }}</div>
-                <div>{{ card.description }}</div>
-            </li>
-        </ul>
+        <div>
+            <CardOne 
+                v-for="card in cardArray"
+                :key="card.key"
+                :icon="card.icon"
+                :title="card.title"
+                :description="card.description"
+            />
+        </div>
 
-        <img src="../img/agency-seo-desk-front-1200x570.jpg" alt="">
+        <img src="public/img/agency-seo-desk-front-1200x570.jpg" alt="">
     </section>
     
 </template>
