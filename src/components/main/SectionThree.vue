@@ -1,5 +1,5 @@
 <script>
-
+    import CardThree from "./cards/CardThree.vue"
     export default {
         data() {
             return {
@@ -37,6 +37,9 @@
                 ]
             };
         },
+        components: {
+            CardThree,
+        }
     }
     
 </script>
@@ -53,15 +56,13 @@
         </p>
 
         <div class="gallery">
-            <div
-            v-for="(card, key) in cardThree"
-            :key="key"
-        >
-                <img 
-                    :src="card.img"
-                    :alt="card.alt"
-                >
-        </div>
+            <CardThree 
+                v-for="(card, key) in cardThree"
+                :key="card.key"
+                :img="card.img"
+                :alt="card.alt"
+                :link="card.link"
+            />
         </div>
 
         <button>   
