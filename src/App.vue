@@ -33,7 +33,7 @@
   }
 
   section {
-    min-height: 800px;
+    min-height: 200px;
   }
 
   .container {
@@ -57,6 +57,7 @@ p {
       padding: 0.5rem;
       padding-inline: 1rem;
       color: white;
+      text-transform: uppercase;
   }
 
   .orange-btn {
