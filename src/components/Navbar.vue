@@ -1,18 +1,51 @@
 <script>
+    import Menu from "./Menu.vue"
 
     export default {
         data() {
             return {
-                linkArr: [
-                    "Home",
-                    "Who We Are",
-                    "What We Do",
-                    "Where We Work",
-                    "Careers",
-                    "News"
-                ],
+                menuArray: [{
+                    title: "Home",
+                    link: "",
+                    isActive: "active",
+                    label: "",
+                },
+                {
+                    title: "Who We Are",
+                    link: "",
+                    isActive: "",
+                    label: "",
+                },
+                {
+                    title: "What We Do",
+                    link: "",
+                    isActive: "",
+                    label: "",
+                },
+                {
+                    title: "Where We Work",
+                    link: "",
+                    isActive: "",
+                    label: "",
+                },
+                {
+                    title: "Careers",
+                    link: "",
+                    isActive: "",
+                    label: "APPLY",
+                },
+                {
+                    title: "News",
+                    link: "",
+                    isActive: "",
+                    label: "",
+                },
+            ]
             };
         },
+        components: {
+               Menu, 
+            }
     }
 
 </script>
@@ -21,15 +54,18 @@
 
     <nav>
         <div class="left-bar">
-            <img src="public/img/logo_seo_1x.png" alt="">
+            <img src="public/img/logo_seo_w_1x.png" alt="">
         </div>
         <div class="right-bar">
             <ul>
-                <li v-for="link in linkArr">
-                    <a href="#">
-                        {{ link }}
-                    </a>
-                </li>
+                <Menu
+                    v-for="(link, key) in menuArray"
+                    :key="link.key"
+                    :title="link.title"
+                    :link="link.link"
+                    :isActive="link.isActive"
+                    :label="link.label"
+                />
             </ul>
             <button>
                 Get in touch now
@@ -40,7 +76,7 @@
     
 </template>
 
-<style>
+<style scoped>
 
     nav {
         display: flex;
@@ -49,8 +85,13 @@
         height: 50px;
     }
 
+    .left-bar,
     .right-bar {
         display: flex;
+    }
+
+    img {
+        height: 1.5rem;
     }
 
     ul {
@@ -68,4 +109,8 @@
         color: white;
     }
 
+    
+    .active {
+        color: red;
+    }
 </style>
