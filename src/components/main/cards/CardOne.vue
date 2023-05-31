@@ -10,14 +10,35 @@ export default {
 </script>
 
 <template>
-    <ul>
+    <div class="card">
+        <ul>
         <li> {{ icon }}</li>
-        <li> {{ title }}</li>
-        <li>{{ description }}</li>
+        <li class="title">
+            {{ title }}
+        </li>
+        <li>
+            <span>
+                {{ description }}
+            </span>
+        </li>
     </ul>
+    </div>
+    
     
 </template>
 
 <style scoped>
+    li {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+   .title {
+    font-size: 1.2rem;
+    font-weight: bolder;
+   }
+
+   span {
+    font-size: 0.8rem;
+   }
 
 </style>

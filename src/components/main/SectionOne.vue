@@ -34,29 +34,49 @@
 <template>
 
     <section>
-        <h1>
-            Meet The New Agency SEO Template From The Avada Team
-        </h1>
 
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam!            
-        </p>
+        <div class="container">
+            <h1>
+                Meet The New Agency SEO Template From The Avada Team
+             </h1>
 
-        <div>
-            <CardOne 
-                v-for="card in cardOne"
-                :key="card.key"
-                :icon="card.icon"
-                :title="card.title"
-                :description="card.description"
-            />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam!            
+            </p>
+
+            <div class="card">
+                <CardOne 
+                    v-for="card in cardOne"
+                    :key="card.key"
+                    :icon="card.icon"
+                    :title="card.title"
+                    :description="card.description"
+                />
+            </div>
+
+            <img src="public/img/agency-seo-desk-front-1200x570.jpg" alt="">
+
         </div>
-
-        <img src="public/img/agency-seo-desk-front-1200x570.jpg" alt="">
+        
     </section>
     
 </template>
 
 <style scoped>
+
+    section {
+        background-color: var(--white);
+        padding-top: 3rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: flex;
+        background-color: white;
+    }
 
 </style>
