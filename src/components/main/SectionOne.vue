@@ -1,11 +1,11 @@
 <script>
 
-    import CardOne from "./CardOne.vue"
+    import CardOne from "./cards/CardOne.vue"
 
     export default {
         data() {
             return {
-                cardArray: [{
+                cardOne: [{
                     icon: "iconsrc",
                     title: "Estabilish Goals",
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est hic alias voluptates, at debitis dicta deleniti? Tempora nihil debitis, quas animi beatae obcaecati ex laborum vel neque, iusto modi corporis!",
@@ -44,7 +44,7 @@
 
         <div>
             <CardOne 
-                v-for="card in cardArray"
+                v-for="card in cardOne"
                 :key="card.key"
                 :icon="card.icon"
                 :title="card.title"
