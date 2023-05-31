@@ -1,5 +1,5 @@
 <script>
-
+    import CardFour from "./cards/CardFour.vue"
     export default {
         data() {
             return {
@@ -34,6 +34,9 @@
             ]
             };
         },
+        components: {
+            CardFour
+        }
     }
 
 </script>
@@ -49,30 +52,16 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam!
         </p>
 
-        <div
-            v-for="card in cardFour"
-        >
-            <ul>
-                <li>
-                    {{ card.name }}
-                </li>
-                <li>
-                    {{ card.price }}
-                </li>
-                <li>
-                    {{ card.projects }}
-                </li>
-                <li>
-                    {{ card.storage }}
-                </li>
-                <li>
-                    {{ card.users }}
-                </li>
-                <button>
-                    <a href="">Start TODAY</a>
-                </button>
-            </ul>
-        </div>
+        <CardFour
+            v-for="(card, key) in cardFour"
+            :key="card.key"
+            :name="card.name"
+            :price="card.price"
+            :projects="card.projects"
+            :storage="card.storage"
+            :users="card.users"
+        />
+            
     </section>
     
 </template>
