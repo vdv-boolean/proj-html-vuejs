@@ -49,11 +49,16 @@
       border: none;
       border-radius: 20px;
       padding: 0.5rem;
+      padding-inline: 1rem;
+      color: white;
   }
 
   .orange-btn {
-        background-color: var(--orange);
-        color: white;
+        background-color: var(--orange); 
+    }
+
+    .violet-btn {
+        background-color: var(--violet); 
     }
 
   a {
