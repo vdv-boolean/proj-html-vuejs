@@ -9,7 +9,7 @@
             label: String,
         },
     };
-    
+
 </script>
 
 <template>
@@ -31,17 +31,6 @@
 </template>
 
 <style scoped>
-
-    button {
-        background-color: none;
-        background: none;
-        border: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
 
     .active {
         color: var(--orange);
