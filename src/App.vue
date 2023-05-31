@@ -36,12 +36,18 @@
     min-height: 800px;
   }
 
-  .container,
-  section {
+  .container {
     width: 1000px;
     height: 100%;
     margin: auto;
+    text-align: center;
   }
+
+h1,
+p {
+  margin-inline: 30%;
+  text-align: center;
+}
 
   button {
       background-color: none;
@@ -64,6 +70,10 @@
   a {
         text-decoration: none;
         color: white;
+    }
+
+    li {
+      list-style: none;
     }
 
   footer {
