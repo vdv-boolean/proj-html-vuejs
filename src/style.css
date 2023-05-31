@@ -7,3 +7,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* Font setting */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
