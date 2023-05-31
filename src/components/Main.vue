@@ -24,10 +24,10 @@
     <SectionOne/>
     <SectionTwo/>
     <SectionThree/>
-    <!-- <SectionFour/> -->
+    <SectionFour/>
     <SectionFive/>
     <SectionSix/>
-    <!-- <SectionSeven/> -->
+    <SectionSeven/>
 </template>
 
 <style scoped>
