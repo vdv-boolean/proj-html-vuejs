@@ -41,23 +41,28 @@
 <template>
 
     <section>
-        <h1>
-            See Our Top Notch Services
-        </h1>
+        
+        <div class="container">
 
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam!
-        </p>
+            <h1>
+                See Our Top Notch Services
+            </h1>
 
-        <div>
-            <CardTwo 
-                v-for="card in cardTwo"
-                :key="card.key"
-                :icon="card.icon"
-                :title="card.title"
-                :description="card.description"
-                :link="card.link"
-            />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam!
+            </p>
+
+            <div class="card">
+                <CardTwo 
+                    v-for="card in cardTwo"
+                    :key="card.key"
+                    :icon="card.icon"
+                    :title="card.title"
+                    :description="card.description"
+                    :link="card.link"
+                />
+            </div>
+
         </div>
 
     </section>
@@ -65,5 +70,21 @@
 </template>
 
 <style scoped>
+
+    section {
+        background-color: var(--blue);
+        background-image: url(../../../public/img/pattern_background.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: white;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .card {
+        display: flex;
+        background-color: var(--violet);
+        gap: 2rem;
+    }
 
 </style>

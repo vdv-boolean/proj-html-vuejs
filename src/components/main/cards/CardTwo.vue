@@ -15,7 +15,7 @@ export default {
         <li>
             {{ icon }}
         </li>
-        <li>
+        <li class="title">
             {{ title }}
         </li>
         <li>
@@ -35,5 +35,13 @@ export default {
 </template>
 
 <style scoped>
+
+    .title {
+        font-weight: bolder;
+    }
+
+    a {
+        color: var(--orange);
+    }
 
 </style>
