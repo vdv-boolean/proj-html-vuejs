@@ -67,8 +67,10 @@
                     :label="link.label"
                 />
             </ul>
-            <button>
-                Get in touch now
+            <button class="orange-btn">
+                <a href="">
+                    Get in touch now
+                </a>   
             </button>
         </div>
         
@@ -104,13 +106,4 @@
         list-style: none;
     }
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
-    
-    .active {
-        color: red;
-    }
 </style>
