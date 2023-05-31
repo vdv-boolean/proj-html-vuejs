@@ -36,11 +36,17 @@
         color: var(--orange);
     }
 
+    a {
+        font-size: 0.7rem;
+    }
+
+    a:hover {
+        color: var(--orange);
+    }
+
     span {
         color: var(--orange);
-        border: 1px solid var(--orange);
         font-size: 0.5rem;
-        padding: 0.2rem;
         font-weight: bolder;
     }
 
