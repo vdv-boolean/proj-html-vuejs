@@ -1,5 +1,5 @@
 <script>
-
+    import CardTwo from "./cards/CardTwo.vue"
     export default {
         data() {
             return {
@@ -31,6 +31,9 @@
                 ]
             };
         },
+        components: {
+            CardTwo,
+        }
     }
     
 </script>
@@ -46,20 +49,16 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum consectetur autem ipsam!
         </p>
 
-        <ul>
-            <li v-for="card in cardTwo">
-                <div>{{ card.icon }}</div>
-                <div>{{ card.title }}</div>
-                <div>{{ card.description }}</div>
-                <button>
-                    <a 
-                        :href="card.link"
-                    >   
-                        Read More...
-                    </a>
-                </button>
-            </li>
-        </ul>
+        <div>
+            <CardTwo 
+                v-for="card in cardTwo"
+                :key="card.key"
+                :icon="card.icon"
+                :title="card.title"
+                :description="card.description"
+                :link="card.link"
+            />
+        </div>
 
     </section>
     
