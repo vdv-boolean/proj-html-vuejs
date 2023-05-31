@@ -19,7 +19,7 @@
             <button class="orange-btn">   
                 Buy Avada Now
             </button>
-            <button>
+            <button class="violet-btn">
                 Contact Us
             </button>
         </div>
