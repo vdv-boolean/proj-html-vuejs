@@ -16,7 +16,7 @@
                 
         </p>
         <div class="buttons">
-            <button>   
+            <button class="orange-btn">   
                 Buy Avada Now
             </button>
             <button>
