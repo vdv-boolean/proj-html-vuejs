@@ -28,6 +28,11 @@ export default {
 </template>
 
 <style scoped>
+    ul {
+        background-color: white;
+        padding: 2rem;
+    }
+
     li {
         margin-top: 1rem;
         margin-bottom: 1rem;

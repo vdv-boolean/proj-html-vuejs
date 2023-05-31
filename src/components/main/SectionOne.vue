@@ -69,6 +69,11 @@
         padding-top: 3rem;
     }
 
+    p {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
     img {
         width: 100%;
     }
@@ -76,7 +81,7 @@
     .card {
         display: flex;
         flex-wrap: flex;
-        background-color: white;
+        gap: 1rem;
     }
 
 </style>

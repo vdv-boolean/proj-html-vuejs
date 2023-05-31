@@ -8,10 +8,7 @@
         <h1>SEM Campaings Made Simple With Avada</h1>
         <p>
             <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </span> 
-            <span>
-                Corporis cupiditate. Voluptas, placeat?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cupiditate. Voluptas, placeat?
             </span>
                 
         </p>
@@ -30,7 +27,7 @@
 
 <style scoped>
     .contain {
-        width: 50%;
+        width: 80%;
         margin-top: 150px;
     }
 

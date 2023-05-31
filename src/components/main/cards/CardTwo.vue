@@ -13,7 +13,7 @@ export default {
 <template>
     <ul>
         <li>
-            {{ icon }}
+            <i class="fa-brands fa-google">hgfd</i>
         </li>
         <li class="title">
             {{ title }}
@@ -26,7 +26,7 @@ export default {
                 <a 
                     :href="link"
                 >   
-                    Read More...
+                    Read More >
                 </a>
             </button>
         </li>
@@ -36,8 +36,18 @@ export default {
 
 <style scoped>
 
+    ul {
+        background-color: var(--blue);
+        padding: 2rem;
+    }
+
+    ul:hover {
+        box-shadow: inset 0px 0px 0px 12px var(--violet)
+    }
     .title {
         font-weight: bolder;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     a {

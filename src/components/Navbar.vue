@@ -98,7 +98,7 @@
 
     ul {
         display: flex;
-        gap: 1rem;
+        gap: 0.1rem;
         padding-inline: 1rem;
     }
 
