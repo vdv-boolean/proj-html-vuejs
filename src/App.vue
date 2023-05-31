@@ -43,6 +43,24 @@
     margin: auto;
   }
 
+  button {
+      background-color: none;
+      background: none;
+      border: none;
+      border-radius: 20px;
+      padding: 0.5rem;
+  }
+
+  .orange-btn {
+        background-color: var(--orange);
+        color: white;
+    }
+
+  a {
+        text-decoration: none;
+        color: white;
+    }
+
   footer {
     height: 200px;
     background-color: white;
